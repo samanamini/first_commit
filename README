@@ -1,12 +1,10 @@
 ### bio-table
 # first convert the file to a tab-delimited file
-/usr/local/bin/bio-table res_non_res_plus_extra_info2_2.txt --in-format csv --format tab > test1.tab
+/usr/local/bin/bio-table table1.csv --in-format csv --format tab > test1.tab
+/usr/local/bin/bio-table table2.csv --in-format csv --format tab > test2.tab
 
-# merge two files with the same column names
-/usr/local/bio-table --merge table1.tab table2.tab
 
-# give me the values in column 31 with value more than 100
-bio-table table1.csv --num-filter "values[31] >= 100"
+# merge two files with the same column nam/usr/local/bin/bio-table table1.csv --in-format csv --format tab > test1.tabes
+bio-table --merge table1.csv table2.csv > merge.csv
 
-# give me the gene names with "responsive" values in the column 27
-bio-table table1.csv --filter "field[1] =~ /responsiveness/"
+
