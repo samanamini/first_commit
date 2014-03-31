@@ -1,0 +1,4 @@
+### bioruby
+/usr/local/bin/bio-table table2.csv --in-format csv --format tab > test1.tab
+/usr/local/bin/bio-table table2.csv --in-format csv --format tab > test1.tab
+/usr/local/bio-table --merge table1.csv table2.csv
